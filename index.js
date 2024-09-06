@@ -44,14 +44,7 @@
 
         REMARKS.innerText="---";
     }
-    
-    function ChangeButtonState(){
-        let playBTN = document.getElementById('playBTN');
-        playBTN.style.transition="0.3 ease-in-out";
-        playBTN.innerText="RESET";
-        playBTN.style.marginLeft="90px";
-    }
-    
+  
     function DrawSFX(){
         let SoundEffect = new Audio("assets/EinzSFXbuzzer.mp3");
         SoundEffect.play();
@@ -658,17 +651,11 @@
 
                 // todo: reset click and reset game
                 
-               
+                
+                // ResetGame();
         }
-        if( click === 4 ){
-            console.log( "click 4" );
-            ChangeButtonState();
-            
-        }
-        if(click === 5 && playBTN.innerText === "RESET"){
+        if(click === 4){
             click = 0;
-            console.log("hello world");
-
             ResetGame();
         }
 }

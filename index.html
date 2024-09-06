@@ -9,6 +9,56 @@
 
 </head>
 <body>
+        <div class="container">
+                <div class="content">
+                        <div class="Game">
+                                <div class="Players Player-1" id="PLAYER1"> <img src="assets/rock.png" alt="..." id="Player1_IMG"> </div>
+                                <div class="Players Player-2" id="PLAYER2"> <img src="assets/rock.png" alt="..." id="Player2_IMG"> </div>
+                        </div>
+                        <div class="PlayerTitles">
+                                <span> Player-1 </span>
+                                <span> vs </span>
+                                <span> Player-2 </span>
+                        </div>
+                        <button type="button" onclick="Play()" id="playBTN"> PLAY </button>
+                </div>
+                <div class="content">
+                        <div class="ScoreBoard">
+                                <div class="heading">
+                                        <span> PLAYERS </span>
+                                        <span> SCORE </span>
+                                        <span> ROUND </span>
+                                </div>
+
+                                <div class="Leaderboard" id="LeaderBoard_1st_ROUND">
+                                        <span> P1 - P2 </span>
+                                        <span> | </span>
+                                        <span id="Score_1st_ROUND"> 0 - 0 </span>
+                                        <span> | </span>
+                                        <span> R - 1 </span>
+                                </div>
+                                <div class="Leaderboard" id="LeaderBoard_2nd_ROUND">
+                                        <span> P1 - P2 </span>
+                                        <span> | </span>
+                                        <span id="Score_2nd_ROUND"> 0 - 0 </span>
+                                        <span> | </span>
+                                        <span> R - 2 </span>
+                                </div>
+                                <div class="Leaderboard" id="LeaderBoard_3rd_ROUND">
+                                        <span> P1 - P2 </span>
+                                        <span> | </span>
+                                        <span id="Score_3rd_ROUND"> 0 - 0 </span>
+                                        <span> | </span>
+                                        <span> R - 3 </span>
+                                </div>
+
+                                <div class="Remarks">
+                                        <span> REMARKS:  </span>
+                                        <span id="REMARKS"> ---  </span>
+                                </div>
+                        </div>
+                </div>
+        </div>
 
         <script src='index.js' defer type='text/Javascript'></script>
 </body>

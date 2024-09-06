@@ -1,0 +1,61 @@
+/* 
+    ( Palettes ) 
+    fonts: inter, medula-one, sans 
+    colors: 
+      green - #337e2c
+      red - #C42020 
+      maroon - #A63B3B 
+      white - #FFFFFF 
+      silver - #CFCFCF 
+      dark grey - #727070 
+      hollow grey - #161313 
+      hollow black - #0C0B0B 
+      black - #000000 
+
+*/
+    @font-face {
+        font-family: medula-one;
+        src: url(medula-one.ttf);
+    }
+
+    body{ background-color: #161313; display: flex; justify-content: center; overflow-x: hidden; overflow-y: hidden; } 
+    *{ margin: 0px; padding: 0px; } 
+
+    .container{ border: 1px solid none; margin-left: 0px; margin-top: 164px; width: auto; height: auto; display: flex; justify-content: center; flex-direction:row; gap: 12px; }
+    .container .content{ border: 1px solid white; width: 300px; height: 300px; align-self: center; }
+    
+    .container .content:nth-child(1){ border: 1px solid rgb(235, 235, 235); background-color: white; border-radius: 16px; }
+    .container .content:nth-child(1) .Game{ border: 1px solid white; margin-top: 32px; height: 132px; display: flex; justify-content: center; grid-gap: 24px; } 
+    .container .content:nth-child(1) .Game .Players{ border: 1px solid rgb(216, 215, 215); background-color: white; box-shadow: 5px 6px 0px 0px rgba(99, 27, 27, 0.301);  width: 124px; height: 124px; }
+    .container .content:nth-child(1) .Game .Players img{ width: 100%; }
+
+    .container .content:nth-child(1) .Game .Player-2 img{ transform: scaleX(-1); }
+
+    .container .content:nth-child(1) .PlayerTitles{ border: 1px solid white; height: 24px; display: flex; justify-content: center; gap: 45px; }
+    .container .content:nth-child(1) .PlayerTitles span{ font-family: medula-one; font-size: 1.5rem; }
+
+    .container .content:nth-child(1) button{ cursor: pointer; border: 1px solid #A63B3B; background-color: #A63B3B; color: white; margin-left: 90px; margin-top: 24px; padding: 16px; padding-left: 42px; padding-right: 42px; }
+    .container .content:nth-child(1) button:hover{ border: 1px solid #C42020; background-color: #C42020; transition: 0.3s ease-in-out; }
+
+    .container .content:nth-child(2){ border: 1px solid #161313; }
+    .container .content:nth-child(2) .ScoreBoard{ background-color: white; height: 150px; }
+    .container .content:nth-child(2) .ScoreBoard .heading{ border-bottom: 1px solid #0C0B0B; height: 24px; display: flex; justify-content: center; gap: 64px; }
+    .container .content:nth-child(2) .ScoreBoard .heading span{  margin-top: 4px; color: #0C0B0B; font-family: medula-one; }
+
+    .container .content:nth-child(2) .ScoreBoard .Leaderboard{ border-bottom: 1px solid #CFCFCF; height: auto; display: flex; justify-content: center; gap: 28px; padding: 4px; }
+    .container .content:nth-child(2) .ScoreBoard .Leaderboard span{ font-family: inter; font-size: 0.8rem; }
+
+    .container .content:nth-child(2) .ScoreBoard .Leaderboard span:nth-child(2){ color: #CFCFCF; }
+    .container .content:nth-child(2) .ScoreBoard .Leaderboard span:nth-child(4){ color: #CFCFCF; }
+
+    .container .content:nth-child(2) .ScoreBoard .Remarks{ border: 1px solid #CFCFCF; margin-top: 32px; height: auto; }
+    
+    .container .content:nth-child(2) .ScoreBoard .Remarks span:nth-child(1){ margin-left: 26px; font-family: inter; font-weight: 800; }
+
+    .container .content:nth-child(2) .ScoreBoard .Remarks span:nth-child(2){ margin-left: 18px; font-family: inter; }
+
+    @media (max-width: 492px) { 
+        .container{ margin-left: 0px; margin-top: 64px; flex-direction: column-reverse; }
+
+        .container .content:nth-child(2){ height: 164px; }
+    }
